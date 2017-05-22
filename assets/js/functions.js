@@ -19,7 +19,7 @@ function getUrlVars()
 }
 var first = getUrlVars()["name"];
 
-$("nameTag").html(first);
+$("#nameTag").html(first);
 
 // Variable speichert klasse
 /* Lösungsvorschlag / Ideen:
