@@ -220,7 +220,7 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: url(../img/332H_small.jpg) no-repeat right center fixed;
+  background: url(../img/332H_small.jpg) no-repeat 75% 60% fixed;
   background-size: cover;
   font-size: 14px;
   line-height: 1.6;
