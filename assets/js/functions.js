@@ -5,16 +5,23 @@ $(document).ready(function() {
 });
 
 // $.urlParam =
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace(
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
 
-$( "#nameTag" ).html(function(name){
-    var results = new RegExp('[\?&]' + name + '=([^]*)').exec(window.location.href);
-    if (results==null){
-       return null;
-    }
-    else{
-       return results[1] || 0;
-    }
-});
+	if ( param ) {
+		return vars[param] ? vars[param] : null;
+	}
+	return vars;
+}
+var name = $_GET('name');
+
+$("nameTag").html(name);
 
 // Variable speichert klasse
 /* Lösungsvorschlag / Ideen:
