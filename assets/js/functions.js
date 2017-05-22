@@ -4,7 +4,9 @@ $(document).ready(function() {
     });
 });
 
-$.urlParam = function(name){
+// $.urlParam =
+
+$( "#nameTag" ).html(function(name){
     var results = new RegExp('[\?&]' + name + '=([^]*)').exec(window.location.href);
     if (results==null){
        return null;
@@ -12,9 +14,7 @@ $.urlParam = function(name){
     else{
        return results[1] || 0;
     }
-}
-
-$( "#nameTag" ).html( urlParam('name') );
+});
 
 // Variable speichert klasse
 /* Lösungsvorschlag / Ideen:
