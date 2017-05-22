@@ -220,7 +220,7 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: url(../img/332H_small.jpg) no-repeat center center fixed;
+  background: url(../img/332H_small.jpg) no-repeat right center fixed;
   background-size: cover;
   font-size: 14px;
   line-height: 1.6;
@@ -286,9 +286,14 @@ section {
       color: rgba(0, 0, 0, 0.6); }
     .intro .kasten .rotate {
       width: 50%;
+      margin-left:60px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+
+  .intro .kasten {
+
+  }
