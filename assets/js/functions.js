@@ -4,24 +4,22 @@ $(document).ready(function() {
     });
 });
 
-// $.urlParam =
-function $_GET(param) {
-	var vars = {};
-	window.location.href.replace( location.hash, '' ).replace(
-		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
-		function( m, key, value ) { // callback
-			vars[key] = value !== undefined ? value : '';
-		}
-	);
-
-	if ( param ) {
-		return vars[param] ? vars[param] : null;
-	}
-	return vars;
+// Read a page's GET URL variables and return them as an associative array.
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
 }
-var name = $_GET('name');
+var first = getUrlVars()["name"];
 
-$("nameTag").html(name);
+$("nameTag").html(first);
 
 // Variable speichert klasse
 /* Lösungsvorschlag / Ideen:
