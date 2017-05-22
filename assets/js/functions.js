@@ -14,7 +14,7 @@ $.urlParam = function(name){
     }
 }
 
-$( "#nameTag" ).html( $.urlParam('name') );
+$( "#nameTag" ).html( urlParam('name') );
 
 // Variable speichert klasse
 /* Lösungsvorschlag / Ideen:
