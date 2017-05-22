@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+gems:
+- jekyll-autoprefixer
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+=======
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+gems:
+- jekyll-autoprefixer
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+>>>>>>> origin/master

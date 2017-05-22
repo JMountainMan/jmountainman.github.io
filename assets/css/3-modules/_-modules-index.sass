@@ -1,0 +1,23 @@
+@mixin boxstyle
+  margin-top: 25px
+  margin-bottom: 25px
+  width: 75%
+  text-align: center
+  margin-left: 15px
+  margin-right: 15px
+
+
+@mixin bg_style
+  width: 50vw
+  height: 100vh
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background-attachment: fixed
+
+  @media screen and (max-width: 1000px)
+    width: 100vw

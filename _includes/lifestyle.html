@@ -1,0 +1,48 @@
+<style>
+  .rotate {
+    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+  }
+
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+
+  @keyframes rotation {
+    from {
+      -ms-transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(359deg);
+    }
+
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+</style>
+<div class="intro">
+  <div class="kasten">
+    <h2 class="headline">Hallo <span id="nameTag">Junge</span>,</h1>
+    <p>ich möchte dich hiermit einladen mit mir in meinen 25ten Geburtstag reinzufeiern.</br>
+
+    </p>
+    <h3>Wann?</h3>
+    <p>Am 26. Mai gegen 18Uhr</p>
+    <h3>Wo?</h3>
+    <p>Stumpfebiel 2</br>37073 Göttingen</br>Innenhof</p>
+    <h3>Essen?</h3>
+    <p>Geplant ist es extremst geile Burger zu machen. Dazu gibt es Salate und diverse Sättigungsbeilagen</br>Für Vegetarier/Veganer findet sich bestimmt auch etwas in den lokalen Mülldeponien</p>
+    <h3>Trinken?</h3>
+    <p>Natürlich stelle ich ein gewisses Kontingent an Getränken (Bier, Softdrinks, Specials?)</br> Jedoch ist mein Budget begrenzt und falls dein Plan die totale Eskalation ist musst du dir selbst noch etwas zu Trinken mitbringen</p>
+    <img class="rotate" src="../assets/img/johann.png">
+  </div>
+</div>
